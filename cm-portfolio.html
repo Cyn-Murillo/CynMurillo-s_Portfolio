@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Portfolio" content="Portfolio">
+    <title>Web creations by Cynthia Murillo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Babylonica">
+    <style>
+        a:link { color: #ae99ae; }
+        a:visited { color: #8c8c8c; }
+        a:hover { color: whitesmoke; }
+
+        a {
+            padding: 5px;
+        }
+
+        body, html {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            transition: background-color .5s;
+            height: 65%;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #000000;
+          opacity: 0.8;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .sidenav a {
+          text-align: left;
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 18px;
+          color: #ae99ae;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: whitesmoke;
+        } 
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 5px;
+          font-size: 20px;
+          margin-left: 25px;
+        }
+
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        } 
+        
+        .bg {
+            background-color: #14161c;
+            background-image: url("AI_img.jpg");
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:inherit;
+        }
+        
+        header { 
+            color: whitesmoke;
+            text-align: left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+
+        .sheader {
+            color: whitesmoke;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .s1 {
+            color: whitesmoke;
+            font-family: "Babylonica", sans-serif;
+            font-size: 70px;
+            text-shadow: 5px 5px 5px #8e51ad;
+            position: relative;
+            margin-right: 25%;
+        }
+
+        .s2 {
+            color: #ae99ae;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            position: relative;
+            margin-right: 25%;
+        }
+        
+        .p1 {
+            text-align: center;
+            margin-top: 150px;
+        }
+        .p2 {
+            position: fixed;
+            color: whitesmoke;
+            bottom: 0em;
+            margin-right: 20%;
+        }
+        .p3 {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</head>
+<body class="bg">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="homeworkSamples.html">WORK</a>
+        <a href="aboutME.html">ABOUT</a>
+        <a href="Cynthia_MurilloResume.pdf">RESUME</a>
+        <a href="mailto:murivonne85@gmail.com">CONTACT</a>
+    </div>
+
+    <header>
+    <span class="sheader" onclick="openNav()">&#9776; Menu</span>
+    </header>
+    
+    
+    <p class="p1">
+        <span class="s1">Cynthia Murillo's Portfolio</span><br>
+        <span class="s2">Junior Software, Back End & Web Developer</span>
+    </p>
+    <footer>
+        <p class="p2">Copyright 2022 - Cynthia Murillo</p>
+        <p class="p3">
+            <a href="https://github.com/CynM25"><img src="ghw.png" alt="github profile" style="width:42px;height:42px;"></a>
+            
+            <a href="https://www.hackerrank.com/cmurill9"><img src="hrw.png" alt="hackerrank profile" style="width:42px;height:42px;"></a>
+        
+            <a href="https://www.linkedin.com/in/cynthia-murillo25/"><img src="linkdw.png" alt="linkedin profile" style="width:42px;height:42px;"></a>
+        </p>
+    </footer>
+</body>
+</html>
