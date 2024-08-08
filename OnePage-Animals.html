@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #C0CFD9;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        article {
+            overflow:auto;
+            width: 300px;
+            height: 600px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #193D57;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article h2 {
+            color: #B1C2CD;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            color: #B1C2CD;
+        }
+
+        section {
+            width: 1040px;
+            margin: 0 auto;
+        }
+
+        .form {
+            margin-left: 800px;
+        }
+
+        form {
+            width: 300px;
+            background-color: #839AAA;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            clear: both;
+        }
+
+        form input[type=text],
+        form input[type=date] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #C0CFD9;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form input[type=submit],
+        form input[type=reset] {
+            width: 100%;
+            padding: 10px;
+            background-color: #37586F;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form input[type=submit]:hover,
+        form input[type=reset]:hover {
+            background-color: #408657;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Pets Gallery!</h1>
+    </header>
+
+    <section>
+    <article>
+        <h2>Dogs</h2>
+        <img src="dog.jpg" alt="Dog">
+        <p>Dogs are loyal companions known for their playful and friendly nature. They require regular exercise and grooming
+            to stay healthy and happy.</p>
+        <p>There are various breeds of dogs, each with unique characteristics and personalities. Whether you prefer small lap
+            dogs or large breeds for outdoor activities, there's a dog for everyone.</p>
+            <p>Consider adopting a dog from a shelter to provide a loving home to a pet in need. Remember behavioral problems
+                are the owner's fault not the breed.</p>
+    </article>
+
+    <article>
+        <h2>Cats</h2>
+        <img src="cat.jpg" alt="Cat">
+        <p>Cats are independent and curious animals known for their agility and hunting skills. They make excellent pets for
+            people who appreciate their graceful movements and affectionate behavior.</p>
+        <p>There are various breeds of cats, from long-haired Persians to playful Sphynx cats. Each breed has its own unique
+            traits and characteristics.</p>
+        <p>Provide your cat with a balanced diet, regular vet check-ups, and plenty of toys to keep them entertained and healthy.</p>
+    </article>
+
+    <article>
+        <h2>Birds</h2>
+        <img src="bird.jpeg" alt="Bird">
+        <p>Birds are colorful creatures that bring joy with their melodious songs and vibrant feathers. They require special
+            care and attention to thrive in a domestic environment.</p>
+        <p>There are various species of pet birds, including parrots, canaries, and finches. Each species has specific dietary
+            needs and habitat requirements.</p>
+        <p>Consider setting up a spacious cage with perches, toys, and fresh food and water to create a comfortable environment
+            for your feathered friend.</p>
+    </article>
+
+    <article>
+        <h2>Fish</h2>
+        <img src="fish.jpeg" alt="Fish">
+        <p>Fish are fascinating creatures that add beauty and tranquility to home aquariums. They come in a variety of colors
+            and sizes, making them a popular choice for pet enthusiasts.</p>
+        <p>There are freshwater and saltwater fish species, each requiring specific water conditions and tank setups. Research
+            the needs of your chosen fish species to provide a suitable aquatic environment.</p>
+        <p>Regularly clean the aquarium and monitor water quality to ensure the health and well-being of your fish.</p>
+    </article>
+
+    <article>
+        <h2>Rabbits</h2>
+        <img src="rabbit.jpeg" alt="Rabbit">
+        <p>Rabbits are gentle and social animals known for their curious nature and affectionate behavior. They can form strong bonds with their owners.</p>
+        <p>There are different breeds of rabbits, from dwarf varieties to larger breeds suitable for families. Provide your rabbit
+            with a spacious cage or indoor enclosure with plenty of hay, fresh vegetables, and toys for enrichment.</p>
+        <p>Spend quality time bonding to strengthen your relationship and ensure their well-being.</p>
+    </article>
+
+    <article>
+        <h2>Hamsters</h2>
+        <img src="hamster.jpeg" alt="Hamster">
+        <p>Hamsters are small, nocturnal rodents known for their energy and playful antics. They are popular pets for children
+            and adults alike due to their compact size and low maintenance care.</p>
+        <p>There are different types of hamsters, such as Syrian hamsters and dwarf hamsters, each with unique characteristics
+            and care requirements.</p>
+        <p>Provide your hamster with a secure cage equipped with bedding, a wheel for exercise, and fresh food and water daily.</p>
+    </article>
+    </section>
+
+    <div class="form">
+        <form>
+            <label for="petPreference">Tell us about your pet:</label>
+            <input type="text" id="petPreference" name="petPreference" placeholder="Enter your pet's name">
+            <br><br>
+            <label for="petOptions">Choose from our list of pets:</label>
+            <input list="petOptions" id="chosenPet" name="chosenPet">
+            <datalist id="petOptions">
+                <option value="Dog">
+                <option value="Cat">
+                <option value="Bird">
+                <option value="Fish">
+                <option value="Rabbit">
+                <option value="Hamster">
+            </datalist>
+            <br><br>
+            <label for="visitDate">When did you last visit a pet store?</label>
+            <input type="date" id="visitDate" name="visitDate">
+            <br><br>
+            <input type="submit" onclick="alert('Thank you!');" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+    </section>
+<br>
+    <footer>
+        <p>Created by Cynthia Murillo</p>
+    </footer>
+</body>
+
+</html>

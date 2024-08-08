@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Winston Revamped</title>
+    <script>
+        // Ensure that p5.js or another drawing library is properly loaded or included
+        function setup() {
+            var earSize = 145;
+            var x = 300;
+
+            // outer ears
+            fill(79, 59, 1);
+            arc(70, 120, earSize, earSize, 1, 360);
+            arc(350, 120, earSize, earSize, 1, 360);
+
+            // inner ears
+            fill(240, 166, 182);
+            arc(80, 140, earSize / 2, earSize / 2, 1, 360);
+            arc(335, 140, earSize / 2, earSize / 2, 1, 360);
+
+            // face
+            fill(176, 132, 12);
+            ellipse(202, 248, x, x);
+
+            // eye brows
+            noFill();
+            strokeWeight(4);
+            arc(150, 190, 100, 100, 210, 270);
+            arc(250, 190, 100, 100, 270, 340);
+
+            // eyes
+            fill(247, 247, 247);
+            ellipse(150, 191, 43, 43);
+            ellipse(250, 191, 43, 43);
+
+            // pupils
+            fill(0, 0, 0);
+            ellipse(157, 191, 25, 25);
+            ellipse(257, 191, 25, 25);
+
+            // nose
+            fill(0, 0, 0);
+            ellipse(205, 250, 145, 60);
+
+            // nostrils
+            fill(247, 247, 247);
+            ellipse(185, 250, 43, 13);
+
+            // mouth
+            stroke(3, 3, 3);
+            strokeWeight(4);
+            fill(240, 28, 17);
+            arc(205, 300, 150, 150, 1, 180);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Your content goes here -->
+    <canvas id="myCanvas"></canvas>
+
+    <footer>
+        <p>Created by Cynthia Murillo</p>
+    </footer>
+
+    <!-- Include p5.js library here or in the head section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script>
+        // Setup function called automatically by p5.js after the page has loaded
+        function setup() {
+            createCanvas(400, 400); // Create a canvas element
+            draw(); // Call the draw function once
+        }
+    </script>
+</body>
+
+</html>

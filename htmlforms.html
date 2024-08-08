@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Form Basics</title>
+</head>
+<body>
+
+<h2>Text input fields</h2>
+
+<form action="http://gophp.w3spaces.com/welcome.php" style="border:solid 2px red; padding: 15px;" method="get">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" maxlength="20"><br>
+  <!-- <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"> -->
+<br>
+<br>
+What is your email address: <br><input type="text" name="email">
+<!-- <label for="address">Address:</label><br>
+  <textarea id="address" name="address"></textarea> -->
+<br><br>
+<label for="genders">Gender:</label><br>
+<input type="radio" id="male" name="gender-m" value="Male">
+<label for="male">Male</label>
+<br>
+<input type="radio" id="female" name="gender-f" value="Female">
+<label for="female">Female</label>
+<br><br>
+<label for="cities">Visited Cities:</label>
+<br>
+<input type="checkbox" id="citySD" name="citySD" value="San Diego">
+<label for="cities">San Diego</label>
+<br>
+<input type="checkbox" id="citySF" name="citySF" value="San Francisco">
+<label for="citySF">San Francisco</label>
+<br>
+<input type="checkbox" id="citySJ" name="citySJ" value="San Jose">
+<label for="citySJ">San Jose</label>
+<br>
+<input type="checkbox" id="citySAC" name="citySAC" value="Sacramento">
+<label for="citySAC">Sacramento</label>
+<br>
+<input type="checkbox" id="citySC" name="citySC" value="Santa Cruz">
+<label for="citySC">Santa Cruz</label>
+<br>
+<br>
+<label for="sports-team">Favorite Sports Team in California:</label>
+<input list="sports-teams" name="sports-team" id="sports-team">
+<datalist id="sports-teams">
+  <option value="49ers">
+  <option value="Warriors">
+  <option value="S.F. Giants">
+  <option value="Sacramento Kings">
+  <option value="San Jose Earthquakes">
+</datalist>
+<br>
+<br>
+<label for="fav-musician">Favorite Musician:</label>
+<input list="fav-musicians" id="fav-musician" name="fav-musician">
+<datalist id="fav-musicians">
+  <option value="Rammstein">
+  <option value="Pantera">
+  <option value="Mago de Oz">
+  <option value="Iron Maiden">
+  <option value="Tierra Santa">
+</datalist>
+<br>
+<br>
+<label for="birthdate">Birth Date:</label>
+<input type="date" id="birthdate" name="birthdate">
+<br>
+<br>
+<label for="dropdown">Favorite Day of the Week:</label>
+<select id="dropdown" name="fav-day">
+<option value="monday">Monday</option>
+<option value="tuesday">Tuesday</option>
+<option value="wednesday">Wednesday</option>
+<option value="thursday">Thursday</option>
+<option value="friday">Friday</option>
+<option value="saturday">Saturday</option>
+<option value="sunday">Sunday</option>
+</select>
+<br>
+<br>
+<label for="favcolor">Favorite color:</label>
+<input type="color" id="favcolor" name="favColor" value="#ff0000">
+<br>
+<br>
+<label for="last4digits">Last Four Digits of Credit Card:</label>
+<input type="number" id="last4digits" name="quantity" min="0" max="9999">
+<br>
+<br>
+<label for="psswrd">Password:</label>
+<input type="password" id="psswrd" name="psswrd">
+<br>
+<br>
+<input type="submit" onclick="alert('Thank you!');" name="sumbit" value="Submit">
+<input type="reset" onclick="alert('Form cleared.');" name="clear-form" value="Clear">
+</form>
+
+
+</body>
+</html>

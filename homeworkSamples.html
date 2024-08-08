@@ -13,69 +13,100 @@
             padding: 5px;
         }
 
-        body, html {
+        body {
             font-family: Georgia, 'Times New Roman', Times, serif;
             transition: background-color .5s;
-          }
-          
-          .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #000000;
-            opacity: 0.8;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-          }
-          
-          .sidenav a {
-            text-align: left;
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 18px;
-            color: #72ddf2;
-            display: block;
-            transition: 0.3s;
-          }
-          
-          .sidenav a:hover {
-            color: whitesmoke;
-          }
-          
-          .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 5px;
-            font-size: 20px;
-            margin-left: 25px;
-          }
-          
-          #main {
-            transition: margin-left .5s;
-            padding: 16px;
-          }
-          
-          @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-          }
+            margin-left: 20px;
+            margin-right: 20px;
+        }
 
-        .bg {
-            background-color: #000000;
-            background-image: url("codeimage.jpeg");
-            height: 100%;
-            background-repeat: no-repeat;
-            background-position: right;
+        section {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+          
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #000000;
+          opacity: 0.8;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+          
+        .sidenav a {
+          text-align: left;
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 18px;
+          color: #72ddf2;
+          display: block;
+          transition: 0.3s;
+        }
         
+        .sidenav a:hover {
+          color: whitesmoke;
         }
-        .d1 {
-            margin-top: 6%;
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 5px;
+          font-size: 20px;
+          margin-left: 25px;
         }
+          
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+
+        #bg {
+            min-height: 100vh;
+            background-color: #10152d;
+            background-image: linear-gradient(to bottom right, #10152d, #72ddf2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column1 {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .column2 {
+            flex: 1;
+        }
+
+        .achievements {
+            flex: 1;
+        }
+
         h1 {
             text-align: left; 
             color: whitesmoke;
@@ -97,6 +128,7 @@
             font-size: 20px;
             padding-top: 3%;
         }
+
         .p2 {
             position: static;
             color: whitesmoke;
@@ -104,16 +136,18 @@
             bottom: 0em;
             margin-right: 20%;
         }
+
         .p3 {
             position: fixed;
             right: 0;
             bottom: 0;        
         }
+
         .pbadge {
             background-color: whitesmoke;
             opacity: 0.5;
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             text-align: center;
             line-height: 100px;
@@ -122,15 +156,12 @@
             padding-top: .45%;
 
         }
+
         li {
             color: whitesmoke;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 20px;
             line-height: 3em;
-        }
-        section {
-            margin-left: 5%;
-            margin-right: 5%;
         }
     </style>
     <script>
@@ -143,12 +174,12 @@
         }
     </script>
 </head>
-<body class="bg">
+<body id="bg">
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="cm-portfolio.html">HOME</a>
         <a href="aboutME.html">ABOUT</a>
-        <a href="Cynthia_MurilloResume.pdf">RESUME</a>
+        <a href="resumes.html">RESUMES</a>
         <a href="mailto:murivonne85@gmail.com">CONTACT</a>
     </div>
 
@@ -156,36 +187,63 @@
     <span class="s1" onclick="openNav()">&#9776; Menu</span>
     </header>
     <section>   
-        <div class="d1">
-        <h1>Samples of my school work.</h1>
-        
-        <p class="p1"> Intermediate HTML and CSS:
-            <ul>
-                <li><a href="https://hills.ccsf.edu/~cmurill9/homepage.html">Intermediate</a>- HTML and CSS class work.</li>
-                
-                <li><a href="https://hills.ccsf.edu/~cmurill9/homework2.html">Mini Project</a>- Removed all obsolete HTML and added a banner.</li>
-            </ul>
-        </p>
-        
-        <p class="p1"> Interactive Web Pages with JavaScript:
-            <ul>
-                <li><a href="https://hills.ccsf.edu/~cmurill9/hw2.html">Sample 1 </a>- Basic Operations</li>
-                
-                <li><a href="https://hills.ccsf.edu/~cmurill9/hw3.html">Sample 2 </a>- Functions</li>
-                
-                <li><a href="https://hills.ccsf.edu/~cmurill9/hw4.html">Sample 3 </a>- Looping Statements</li>
-            </ul>
-        </p>
-        <br>
-        <h1>Achievements!</h1>
-        <br>
-        <p class="pbadge">        
-        <img src="career-preparation-workshop.png" alt="Cisco CareerPrep Badge" style="width:100px; height:98px;">
-        </p>
+        <div class="content-container">
+            <h1>Samples of my school work.</h1>
+            <div class="columns">
+                <div class="column1">
+                    <p class="p1"> Intermediate HTML and CSS:
+                        <ul>
+                            <li><a href="https://hills.ccsf.edu/~cmurill9/homepage.html">Intermediate</a>- HTML and CSS class work.</li>
+
+                            <li><a href="https://hills.ccsf.edu/~cmurill9/homework2.html">Mini Project</a>- Removed all obsolete HTML and added a banner.</li>
+                        </ul>
+                    </p>
+
+                    <p class="p1"> Interactive Web Pages with JavaScript:
+                        <ul>
+                            <li><a href="https://hills.ccsf.edu/~cmurill9/hw2.html">Sample 1 </a>- Basic Operations</li>
+
+                            <li><a href="https://hills.ccsf.edu/~cmurill9/hw3.html">Sample 2 </a>- Functions</li>
+
+                            <li><a href="https://hills.ccsf.edu/~cmurill9/hw4.html">Sample 3 </a>- Looping Statements</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="column2">
+                    <br>
+                    <p class="p1"> WordPress Project:
+                        <ul>
+                            <li><a href="https://fammemoirs.wordpress.com/">First Language</a>- A web page created using WordPress.</li>
+                        </ul>
+                    </p>
+
+                    <p class="p1"> Usability Testing:
+                        <ul>
+                            <li><a href="usabilitytest.pdf" target="_blank">Usability Testing Report</a></li>
+                        </ul>
+                    </p>
+
+                    <p class="p1"> Site Maps:
+                        <ul>
+                            <li><a href="sitemap.pdf" target="_blank">Site Map</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>    
+
+            <div class="achievements">
+                <h1>Achievements!</h1>
+                <br>
+                <p class="pbadge">        
+                    <img src="career-preparation-workshop.png" alt="Cisco CareerPrep Badge" style="width:200px; height:198px;">
+                </p>
+            </div>
         </div>
     </section>
-    <footer>
-        <p class="p2">Copyright 2022 - Cynthia Murillo</p>
+    <br>
+    <br>
+    <footer>    
+        <p class="p2">Copyright 2024 - Cynthia Murillo</p>
         <p class="p3">
             <a href="https://github.com/CynM25"><img src="ghw.png" alt="github profile" style="width:42px;height:42px;"></a>
             <br>
